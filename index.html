@@ -1,0 +1,274 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>BrothersBarber Poprad · barbershop na Námestí sv. Egídia — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre BrothersBarber Poprad — pánske strihy a brada, Námestie sv. Egídia 36/59, Poprad.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --twill:#121311; --twill-2:#1a1b18; --thread:#ede4d3; --thread-dim:#b9b1a2;
+  --red:#c4302a; --red-deep:#8f1f1b; --chrome:#a7abaf;
+  --hair:rgba(237,228,211,.16); --stitch:rgba(237,228,211,.62);
+  --rye:"Rye",Georgia,serif; --cond:"Roboto Condensed","Arial Narrow",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--twill);color:var(--thread);font:400 17px/1.55 var(--cond);
+  background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.022) 0 1px,transparent 1px 5px),repeating-linear-gradient(-45deg,rgba(0,0,0,.25) 0 1px,transparent 1px 5px)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--thread);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.cap{font:700 12px/1.3 var(--cond);letter-spacing:.16em;text-transform:uppercase}
+.num{font-variant-numeric:tabular-nums}
+
+.notice{background:var(--thread);color:var(--twill);font:500 13.5px/1.45 var(--cond);text-align:center;padding:8px 16px}
+
+/* header */
+header{border-bottom:2px dashed var(--hair)}
+.hd{display:flex;align-items:center;gap:20px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:52px;height:52px;border-radius:50%;box-shadow:0 0 0 3px var(--twill),0 0 0 5px var(--chrome)}
+.brand b{font:400 19px/1 var(--rye);letter-spacing:.02em}
+.brand small{display:block;font:700 11px/1 var(--cond);letter-spacing:.24em;color:var(--thread-dim);margin-top:5px}
+nav{margin-left:auto;display:flex;gap:26px}
+nav a{text-decoration:none;font:500 15px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;padding:14px 0;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+nav a:hover{background-size:100% 1px}
+.hd-tel{font:700 16px/1 var(--cond);text-decoration:none;padding:13px 18px;border:2px dashed var(--stitch);border-radius:999px;white-space:nowrap}
+.hd-tel:hover{background:var(--twill-2)}
+
+/* hero */
+.hero{padding:56px 0 64px}
+.hero-grid{display:grid;grid-template-columns:4.4fr 7.6fr;gap:52px;align-items:center}
+.eyebrow{color:var(--thread-dim)}
+h1{font:400 clamp(44px,6.4vw,82px)/.98 var(--rye);letter-spacing:.01em;margin:16px 0 22px;color:var(--thread);text-shadow:0 2px 0 #000}
+h1 span{display:block}
+h1 .loc{display:inline-block;font:700 15px/1 var(--cond);letter-spacing:.3em;background:var(--red);color:var(--thread);padding:9px 14px 8px 17px;border-radius:6px;box-shadow:0 0 0 2px var(--red),0 0 0 4px var(--twill),0 0 0 6px var(--red);margin-top:18px;text-shadow:none;vertical-align:middle}
+.lede{font-size:19px;max-width:30ch;color:var(--thread)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:999px;font:700 15px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;position:relative}
+.btn-red{background:var(--red);color:var(--thread)}
+.btn-red::after{content:"";position:absolute;inset:4px;border:1.5px dashed rgba(237,228,211,.7);border-radius:999px;pointer-events:none}
+.btn-red:hover{background:var(--red-deep)}
+.btn-line{border:2px solid var(--hair);color:var(--thread)}
+.btn-line:hover{border-color:var(--thread)}
+
+.photo-patch{position:relative}
+.merrow{padding:7px;border-radius:30px;background:repeating-linear-gradient(118deg,#e9e0cd 0 2px,#a39b8a 2px 3.5px)}
+.merrow-inner{border-radius:24px;overflow:hidden;position:relative;background:#000}
+.merrow-inner::after{content:"";position:absolute;inset:9px;border:2px dashed var(--stitch);border-radius:17px;pointer-events:none}
+.hero .merrow-inner img{width:100%;aspect-ratio:940/560;object-fit:cover}
+.badge{position:absolute;left:-34px;bottom:-38px;width:150px;height:150px;border-radius:50%;padding:6px;background:repeating-conic-gradient(#d9d2c2 0 2deg,#8e887c 2deg 4deg);transform:rotate(-8deg);box-shadow:0 10px 24px rgba(0,0,0,.55)}
+.badge img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.photo-cap{margin-top:14px;color:var(--thread-dim);font-size:14px;text-align:right}
+
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;padding-top:22px;border-top:2px dashed var(--hair);font-size:15px;color:var(--thread-dim)}
+.facts b{color:var(--thread);font-weight:700}
+
+/* cenník */
+.price{padding:24px 0 72px}
+.price .merrow{border-radius:34px;padding:8px;background:repeating-linear-gradient(118deg,#e9e0cd 0 2px,#a39b8a 2px 3.5px)}
+.price-in{background:var(--red);border-radius:27px;position:relative;padding:48px 56px;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;
+  background-image:repeating-linear-gradient(45deg,rgba(0,0,0,.07) 0 1px,transparent 1px 4px)}
+.price-in::before{content:"";position:absolute;inset:12px;border:2px dashed rgba(237,228,211,.75);border-radius:19px;pointer-events:none}
+.price h2{font:400 clamp(34px,4vw,48px)/1 var(--rye);margin:10px 0 0}
+.big{display:flex;align-items:baseline;gap:18px;margin-top:22px;flex-wrap:wrap}
+.big .item{font:700 22px/1.1 var(--cond);text-transform:uppercase;letter-spacing:.06em}
+.big .eur{font:700 clamp(84px,10vw,128px)/.9 var(--cond);letter-spacing:-.02em}
+.quote{font-size:19px;line-height:1.45;max-width:34ch}
+.src{font-size:13.5px;color:rgba(237,228,211,.82);margin-top:10px}
+.rows{list-style:none;margin-top:22px;border-top:1.5px dashed rgba(237,228,211,.5)}
+.rows li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1.5px dashed rgba(237,228,211,.5);font-size:17px}
+.rows li span:last-child{white-space:nowrap;font-weight:700}
+.razors{position:absolute;right:30px;top:-30px;width:92px;height:92px;border-radius:50%;background:var(--twill);box-shadow:0 0 0 4px var(--red),0 0 0 7px #d9d2c2;display:grid;place-items:center}
+
+/* priestor */
+.sec-h{display:flex;align-items:baseline;gap:18px;margin-bottom:26px}
+.sec-h h2{font:400 clamp(30px,3.4vw,40px)/1 var(--rye)}
+.sec-h p{color:var(--thread-dim)}
+.space{padding:24px 0 72px}
+.space-grid{display:grid;grid-template-columns:1fr 236px;gap:28px;align-items:start}
+.space .wide .merrow-inner img{width:100%;aspect-ratio:900/571;object-fit:cover}
+.tile .merrow{border-radius:22px;padding:6px}
+.tile .merrow-inner{border-radius:17px}
+.tile .merrow-inner::after{inset:7px;border-radius:12px}
+.tile img{width:100%;aspect-ratio:185/315;object-fit:cover}
+figcaption{margin-top:12px;font-size:14.5px;color:var(--thread-dim)}
+figcaption b{color:var(--thread);font-weight:500}
+.space figure{margin:0}
+.note{margin-top:22px;font-size:15px;color:var(--thread-dim);max-width:62ch}
+
+/* kontakt */
+.contact{padding:24px 0 80px}
+.c-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:28px}
+.card{border:2px dashed var(--stitch);border-radius:26px;padding:32px 34px;background:var(--twill-2);position:relative}
+.card h3{font:400 28px/1 var(--rye);margin-bottom:20px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:12px 22px}
+dt{color:var(--thread-dim)}
+dd a{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;transition:background-size .2s}
+dd a:hover{background-size:0 1px}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1.5px dashed var(--hair);font-size:18px}
+.hours li:first-child{padding-top:0}
+.hours .off{color:var(--thread-dim)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.links a{min-height:44px;display:inline-flex;align-items:center;padding:0 16px;border:1.5px solid var(--hair);border-radius:999px;text-decoration:none;font:500 14px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase}
+.links a:hover{border-color:var(--thread)}
+
+footer{border-top:2px dashed var(--hair);padding:26px 0 30px;color:var(--thread-dim);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.mbar{display:none}
+@media (max-width:900px){
+  .hero-grid,.price-in,.c-grid,.space-grid{grid-template-columns:1fr}
+  .hero{padding:36px 0 56px}
+  .photo-patch{order:-1;margin:0 0 30px 14px}
+  .hero-grid{gap:20px}
+  .photo-cap{padding-left:96px}
+  .price-in{padding:40px 30px 34px;gap:26px}
+  .space-grid .tile{max-width:225px}
+}
+@media (max-width:700px){
+  nav{display:none}
+  .hd-tel{margin-left:auto;padding:12px 14px;font-size:15px}
+  .brand b{font-size:16px}
+  .wrap{padding:0 16px}
+  h1{font-size:clamp(40px,12vw,56px)}
+  .lede{font-size:18px}
+  .badge{width:104px;height:104px;left:-22px;bottom:-30px}
+  .photo-cap{font-size:13px}
+  .price-in{padding:36px 22px 28px}
+  .razors{width:70px;height:70px;right:18px;top:-22px}
+  .razors svg{width:44px}
+  .card{padding:26px 20px}
+  dl{grid-template-columns:1fr;gap:2px}
+  dd{margin-bottom:12px}
+  body{padding-bottom:calc(70px + env(safe-area-inset-bottom))}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:var(--twill);border-top:2px dashed var(--stitch)}
+  .mbar a{min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:999px;font:700 15px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+  .mbar a:first-child{background:var(--red)}
+  .mbar a:last-child{border:2px solid var(--hair)}
+}
+@media (hover:hover){.space figure img,.hero .merrow-inner img{transition:transform .5s}.space figure:hover img{transform:scale(1.045)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="notice" role="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="BrothersBarber Poprad — na začiatok">
+      <img src="assets/brothers-logo.webp" alt="Logo BrothersBarber — had okolo britvy" width="52" height="52">
+      <span><b>BrothersBarber</b><small>POPRAD</small></span>
+    </a>
+    <nav aria-label="Hlavná navigácia"><a href="#cennik">Cenník</a><a href="#priestor">Priestor</a><a href="#kontakt">Kontakt</a></nav>
+    <a class="hd-tel num" href="tel:+421940957886">0940 957 886</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="cap eyebrow">Barbershop · Námestie sv. Egídia</p>
+        <h1><span>Brothers</span><span>Barber</span><span class="loc">POPRAD</span></h1>
+        <p class="lede">Pánske strihy a úprava brady priamo na popradskom námestí. Termín si dohodnete telefonicky alebo online cez QuickBook.</p>
+        <div class="cta">
+          <a class="btn btn-red" href="tel:+421940957886">Zavolať</a>
+          <a class="btn btn-line" href="https://quickbook.sk/barber/brothersbarber-poprad" rel="noopener" target="_blank">Termín cez QuickBook</a>
+        </div>
+        <p class="facts"><span><b>5,0 ★</b> Google · 119 hodnotení (k 30. 9. 2026)</span><span><b>Pánsky strih 18 €</b></span></p>
+      </div>
+      <figure class="photo-patch">
+        <div class="merrow"><div class="merrow-inner">
+          <img src="assets/brothers-pracoviska-zrkadla.webp" width="940" height="560" fetchpriority="high" alt="Pracovné miesta barbershopu: červený a limetkový panel s podsvietenými oválnymi zrkadlami a umývadlami">
+        </div></div>
+        <div class="badge" aria-hidden="true"><img src="assets/brothers-logo.webp" alt="" width="150" height="150"></div>
+        <figcaption class="photo-cap">Pracoviská v štýle lodných kontajnerov · foto z ich Facebooku</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="price" id="cennik" aria-labelledby="cennik-h">
+    <div class="wrap">
+      <div class="merrow"><div class="price-in">
+        <div class="razors" aria-hidden="true">
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="#ede4d3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <g transform="rotate(45 28 28)"><rect x="8" y="23" width="26" height="9" rx="2"/><path d="M34 26h15M34 29h15"/><path d="M12 27.5h18" stroke-dasharray="2 2.4"/></g>
+            <g transform="rotate(-45 28 28)"><rect x="8" y="23" width="26" height="9" rx="2" fill="#c4302a"/><path d="M34 26h15M34 29h15"/><path d="M12 27.5h18" stroke-dasharray="2 2.4"/></g>
+          </svg>
+        </div>
+        <div>
+          <p class="cap">Cenník</p>
+          <h2 id="cennik-h">Pánsky strih</h2>
+          <div class="big"><span class="eur num">18 €</span></div>
+        </div>
+        <div>
+          <p class="quote">„Kvalitný strih nemusí stáť veľa. U nás pánsky strih za 18 €.“</p>
+          <p class="src">Cena a citát z príspevku na ich Facebooku (23. 9. 2026), overiť.</p>
+          <ul class="rows">
+            <li><span>Pánsky strih</span><span class="num">18 €</span></li>
+            <li><span>Úprava brady</span><span>cenu doplní podnik</span></li>
+          </ul>
+          <p class="src">Ukážka návrhu: ďalšie položky cenníka doplní podnik.</p>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="space" id="priestor" aria-labelledby="priestor-h">
+    <div class="wrap">
+      <div class="sec-h"><h2 id="priestor-h">Priestor</h2><p>Námestie sv. Egídia 36/59</p></div>
+      <div class="space-grid">
+        <figure class="wide">
+          <div class="merrow"><div class="merrow-inner">
+            <img src="assets/brothers-cakaren-stolik.webp" width="900" height="571" loading="lazy" alt="Čakacia časť: tmavý stolík s rastlinou, kufríkom a kovovým glóbusom, v pozadí kreslá a pracoviská">
+          </div></div>
+          <figcaption><b>Čakacia časť</b> — tmavé tóny, drevená podlaha, kreslá pri pracoviskách.</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="merrow"><div class="merrow-inner">
+            <img src="assets/brothers-strih-zozadu.webp" width="185" height="315" loading="lazy" alt="Pánsky strih s prechodom, pohľad zozadu, v pozadí nápis The Barber">
+          </div></div>
+          <figcaption><b>Ich práca</b> — strih s prechodom, foto z Facebooku.</figcaption>
+        </figure>
+      </div>
+      <p class="note">Ukážka návrhu: galériu strihov doplní podnik vlastnými fotkami (na Facebooku sú najmä portréty klientov, ktoré sem bez súhlasu nedávame).</p>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt" aria-labelledby="kontakt-h">
+    <div class="wrap">
+      <div class="sec-h"><h2 id="kontakt-h">Kontakt</h2></div>
+      <div class="c-grid">
+        <div class="card">
+          <h3>Adresa</h3>
+          <dl>
+            <dt>Adresa</dt><dd>Námestie svätého Egídia 36/59, 058 01 Poprad</dd>
+            <dt>Telefón</dt><dd><a class="num" href="tel:+421940957886">0940 957 886</a></dd>
+            <dt>E-mail</dt><dd><a href="mailto:Brothersbarberpp@gmail.com">Brothersbarberpp@gmail.com</a></dd>
+            <dt>Instagram</dt><dd><a href="https://www.instagram.com/brothersbarber_pp/" rel="noopener" target="_blank">@brothersbarber_pp</a></dd>
+          </dl>
+          <div class="links">
+            <a href="https://www.google.com/maps/search/BrothersBarber+Poprad+Poprad" rel="noopener" target="_blank">Google Mapy</a>
+            <a href="https://quickbook.sk/barber/brothersbarber-poprad" rel="noopener" target="_blank">QuickBook</a>
+            <a href="https://www.facebook.com/p/BrothersBarber-Poprad-100094688823675/" rel="noopener" target="_blank">Facebook</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Hodiny</h3>
+          <ul class="hours num">
+            <li><span>Pondelok – piatok</span><span>9:00 – 17:00</span></li>
+            <li class="off"><span>Sobota – nedeľa</span><span>zatvorené</span></li>
+          </ul>
+          <p class="note">Podľa profilu na QuickBook (1. 10. 2026) — overiť.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>Fotky: Facebook stránka BrothersBarber Poprad</span></div></footer>
+
+<div class="mbar"><a href="tel:+421940957886">Zavolať</a><a href="https://quickbook.sk/barber/brothersbarber-poprad" rel="noopener" target="_blank">QuickBook</a></div>
